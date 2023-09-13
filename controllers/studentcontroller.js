@@ -59,6 +59,9 @@ const studentcontroller = {
     const studentData = JSON.parse(Data.slice(47, Data.length - 2));
     return res.render("singlestudent", { studentData: studentData.table.rows });
   },
+  async getAbout(req, res) {
+    return res.render("about");
+  },
 };
 
 module.exports = studentcontroller;

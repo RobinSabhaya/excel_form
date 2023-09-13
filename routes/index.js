@@ -6,6 +6,7 @@ const {
   getStudent,
   getData,
   singleStudent,
+  getAbout,
 } = require("../controllers/studentcontroller");
 const route = express.Router();
 
@@ -20,4 +21,5 @@ route.get("/studentrecord", getData);
 route.get("/student", getStudent);
 route.get("/singlestudent", singleStudent);
 route.post("/student", postStudent);
+route.get("/about", getAbout);
 module.exports = route;

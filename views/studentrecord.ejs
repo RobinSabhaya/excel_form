@@ -9,6 +9,7 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
+
 <body style="background-image:url('/bg1.png')">
     <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
         <div class="container-fluid">
@@ -30,7 +31,7 @@
                         <a class="nav-link" href="/student">Student</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="/studentrecord">studentrecord</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
@@ -40,7 +41,7 @@
         </div>
     </nav>
     <!-- Table -->
-    <table class="table table-striped">
+    <table class="table table-striped table-responsive-md">
         <tbody>
             <% studentData.forEach(student=>{%>
                 <tr>
