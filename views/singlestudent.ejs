@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <body style="background-image:url('/bg1.png')">
+        <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-dark" href="/">Expert IT & Multimedia Institute</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+                    aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/student">Student</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- form -->
+        <div class="d-flex justify-content-center align-items-center flex-column" style="height:90vh; width: 100%;">
+            <div class="card text-white bg-primary container p-xl-4" style="width: auto;height: auto;">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="form-label">first name</label>
+                        <input type="email" class="form-control form-control-lg mb-3" id="" aria-describedby="emailHelp"
+                            placeholder="Enter  first name" required value="<%= studentData[0].c[1].v %>">
+                        <label for="exampleInputEmail1" class="form-label">last name</label>
+                        <input type="email" class="form-control mb-4 form-control-lg" id="" aria-describedby="emailHelp"
+                            placeholder="Enter last name" required value="<%= studentData[0].c[2].v %>">
+                        <label for="exampleInputEmail1" class="form-label">emailId</label>
+                        <input type="email" class="form-control mb-4 form-control-lg" id="" aria-describedby="emailHelp"
+                            placeholder="Enter emailId" required value="<%= studentData[0].c[3].v %>">
+                        <label for="exampleInputEmail1" class="form-label">gender</label>
+                        <input type="email" class="form-control mb-4 form-control-lg" id="" aria-describedby="emailHelp"
+                            placeholder="Enter gender" required value="<%= studentData[0].c[4].v %>">
+                        <button type="submit" class="btn btn-dark container form-control-lg mb-3">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>

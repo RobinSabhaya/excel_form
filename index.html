@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const spreadsheetId = "1FbKMPbuNAGYvZW7Yhdw4I5zPa4w-AH9h8IIB79YDgss";
+        const sheetName = "studentrecord";
+        const query = "Select A,B,C,D,E WHERE B = 'shubham'";
+        const qu = encodeURIComponent(query);
+        const uri = `https://docs.google.com/a/google.com/spreadsheets/d/${spreadsheetId}/gviz/tq?tq=${qu}`;
+        const f = fetch(uri).then((res) => {
+            return res.text();
+        }).then(val => {
+            console.log(val)
+        })
+    </script>
+</body>
+
+</html>
